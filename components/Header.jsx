@@ -29,11 +29,9 @@ const Header = () => {
               <span className="px-3 text-center cursor-pointer  ">Home</span>
             </Link>
             {/*  eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <a href="/about">
-              <span className="px-3 text-center cursor-pointer pt-3 ">
-                About
-              </span>
-            </a>
+            <Link href="/about">
+              <span className="px-3 text-center cursor-pointer ">About</span>
+            </Link>
 
             <Menu as="div" className={dr()}>
               <div>
