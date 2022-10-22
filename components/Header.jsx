@@ -35,7 +35,7 @@ const Header = () => {
 
             <Menu as="div" className={dr()}>
               <div>
-                <Menu.Button className="inline-flex w-full justify-center rounded-md text-white font-semibold px-4 py-2 text-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                <Menu.Button className="inline-flex w-full justify-center rounded-md font-semibold px-4 py-2 text-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                   Options
                   <ChevronDownIcon
                     className="ml-2 -mr-1 h-5 w-5 "
@@ -52,7 +52,7 @@ const Header = () => {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className="absolute right-0 mt-2 w-72 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 flex justify-center focus:outline-none">
+                <Menu.Items className="absolute right-0 mt-2 w-72 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 flex  text-gray-700 justify-center focus:outline-none">
                   <div className="px-1 py-4 flex flex-col gap-5  ">
                     {category.map((item) => (
                       <Menu.Item key={item.slug}>
@@ -98,11 +98,11 @@ const Header = () => {
         <div
           className={`${
             isOpen ? "flex opacity-100" : "hidden opacity-70"
-          } mx-auto absolute top-20 z-50 bottom-0 left-0 w-full h-3/5 bg-gray-500 transition  px-4 md:hidden bg-opacity-60`}
+          } mx-auto absolute top-20 z-50  left-0 w-full bg-gray-500 transition  px-4 md:hidden bg-opacity-60`}
         >
-          <div className="w-full bg-gray-100 ">
+          <div className="w-full bg-gray-100  text-gray-700">
             <div className="flex flex-col py-5 px-3 justify-center gap-10">
-              <div className="flex-col flex border-b border-blue-400 py-5 gap-3">
+              <div className="flex-col flex border-b text-gray-700 border-blue-400 py-5 gap-3">
                 {category.map((item) => {
                   return (
                     <Link key={item.slug} href={`/category/${item.slug}`}>
