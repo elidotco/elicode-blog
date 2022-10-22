@@ -15,6 +15,8 @@ const FeaturedPostCard = ({ post }) => (
         alt={post.title}
         className="w-full relative align-middle rounded-lg object-cover"
         layout="fill"
+        blurDataURL="../images/placeholder.avif"
+        placeholder="blur"
       />
     </div>
     <div className="absolute rounded-lg bg-center bg-gradient-to-b opacity-50 from-gray-400 via-gray-700 to-black w-full h-72" />
