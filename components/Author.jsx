@@ -14,9 +14,9 @@ const Author = ({ author }) => {
           src={author.image.url}
         />
       </div>
-      <h3 className="text-white font-bold my-4 text-center text-xl">
+      <h1 className="text-white font-bold my-4 text-center text-xl">
         {author.name}
-      </h3>
+      </h1>
       <p className="text-white text-center text-lg">{author.bio}</p>
     </div>
   );

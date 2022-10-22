@@ -50,7 +50,7 @@ const CommentsForm = ({ slug }) => {
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 pb-12">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">commentsform</h3>
+      <h1 className="text-xl mb-8 font-semibold border-b pb-4">commentsform</h1>
       <div className="grid grid-cols-1 mb-4 gap-4">
         <textarea
           ref={commentEl}

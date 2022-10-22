@@ -16,9 +16,9 @@ const Comments = ({ slug }) => {
     <>
       {comments.length > 0 && (
         <div className="bg-white shadow-lg rounded-lg p-8 mb-8 ">
-          <h3 className="text-xl mb-8 font-semibold">
+          <h1 className="text-xl mb-8 font-semibold">
             {comments.length} Comments
-          </h3>
+          </h1>
 
           {comments.map((c) => {
             console.log(c);

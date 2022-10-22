@@ -52,7 +52,7 @@ const About = () => {
                     hands-on experince
                   </p>
 
-                  <h3>So how Can i help you ?</h3>
+                  <h1>So how Can i help you ?</h1>
                   <p>
                     I write 2-3 times a week about front end technologies ,
                     Frameworks,skills and how to be become the best devloper you

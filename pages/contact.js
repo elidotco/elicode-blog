@@ -49,9 +49,9 @@ const Contact = () => {
   return (
     <div className="container mx-auto px-4 lg:px-10 mb-6">
       <div className="bg-white shadow-lg text-center rounded-lg p-8 pb-12">
-        <h3 className="text-xl mb-8 font-semibold border-b pb-4">
+        <h1 className="text-xl mb-8 font-semibold border-b pb-4">
           How Can I Help You
-        </h3>
+        </h1>
         <div className="grid grid-cols-1 mb-4 gap-4">
           <textarea
             ref={commentEl}
