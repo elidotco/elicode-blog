@@ -34,10 +34,12 @@ const PostWidget = ({ slug, categories }) => {
           >
             <div className="w-16 flex-none">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 alt={post.title}
                 src={post.featuredImage.url}
                 className="align-middle h-16 w-16 object-cover rounded-full"
+                height={64}
+                width={64}
               />
             </div>
             <div className="flex-grow ml-4">

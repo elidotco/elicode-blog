@@ -49,7 +49,7 @@ const PostDetail = ({ post }) => {
         );
       case "image":
         return (
-          <img
+          <Image
             key={index}
             alt={obj.title}
             height={obj.height}

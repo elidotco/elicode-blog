@@ -10,10 +10,11 @@ const Card = ({ post }) => {
 
       <div className="relative overflow-hidden shadow-md pb-80 mb-6 ">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={post.featuredImage.url}
           alt={post.title}
           className="object-cover absolute w-full h-full rounded-t-lg lg:rounded-lg "
+          layout="fill"
         />
       </div>
       <h1
