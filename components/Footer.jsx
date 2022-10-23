@@ -26,9 +26,9 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="absolute -bottom-56 bg-blue-500 brightness-50   text-white w-full ">
+    <div className="absolute -bottom-56 bg-blue-500    text-white w-full ">
       <div className="">
-        <div className="w-full py-2 lg:px-14 bg-blue-500 brightness-50 shadow-lg flex justify-center flex-col lg:justify-between lg:flex-row items-center gap-5">
+        <div className="w-full py-2 lg:px-14 bg-blue-500 shadow-lg flex justify-center flex-col lg:justify-between lg:flex-row items-center gap-5">
           <p className="text-lg font-semibold">
             Lets get connected on social media
           </p>
