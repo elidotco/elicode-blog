@@ -10,10 +10,6 @@ import {
 } from "../../components";
 import { AdjacentPosts } from "../../sections";
 import { getPostDetails, getPosts } from "../../services";
-import dynamic from "next/dynamic";
-const DynamicHeader = dynamic(() => import("../components/PostDetail"), {
-  suspense: true,
-});
 
 const PostDetails = ({ post }) => {
   return (
