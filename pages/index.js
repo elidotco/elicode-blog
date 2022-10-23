@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import { PostWidget, Card, Category } from "../components";
 import { getPosts } from "../services";
+
 export default function Home({ posts }) {
   return (
     <div className="container px-4  lg:px-10 mb-8">
@@ -11,7 +12,7 @@ export default function Home({ posts }) {
         <meta name="description" content="Made by elicode" />
         <meta name="robots" content="all" />
         <link rel="icon" href="/favicon.ico" />
-        <html lang={english} />
+        <html lang={"en"} />
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
