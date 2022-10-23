@@ -1,5 +1,4 @@
 import Head from "next/head";
-import postcss from "postcss";
 import React from "react";
 import {
   Author,
@@ -10,7 +9,7 @@ import {
   PostWidget,
 } from "../../components";
 import { AdjacentPosts } from "../../sections";
-import { getPostDetails, getPosts, getPostsDetails } from "../../services";
+import { getPostDetails, getPosts } from "../../services";
 
 const PostDetails = ({ post }) => {
   return (
