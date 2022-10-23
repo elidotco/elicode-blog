@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import { getrecentPosts, getSimilarPosts } from "../services";
 import Image from "next/image";
-import { useLayoutEffect } from "react";
 import Link from "next/link";
 
 const PostWidget = ({ slug, categories }) => {

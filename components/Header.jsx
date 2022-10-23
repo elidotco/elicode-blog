@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState, Fragment } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import Link from "next/link";
 
-import { BeakerIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import { Menu, Popover, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Menu, Transition } from "@headlessui/react";
 import { getCategories } from "../services";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 

@@ -1,13 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
-import { FeaturedPosts } from "../sections";
 
 import { PostWidget, Card, Category } from "../components";
 import { getPosts } from "../services";
 export default function Home({ posts }) {
   return (
     <div className="container px-4  lg:px-10 mb-8">
-      <FeaturedPosts />
+      {/* <FeaturedPosts /> */}
       <Head>
         <title>EliCode</title>
         <meta name="description" content="Made by elicode" />
