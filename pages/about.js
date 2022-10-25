@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import React from "react";
 import { Category, PostWidget } from "../components";
 import Newsletter from "../components/Newsletter";
 import logo from "../images/logo.png";

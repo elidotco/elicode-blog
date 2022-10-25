@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-
 import moment from "moment";
 import Image from "next/image";
+import React from "react";
 
 const PostDetail = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {

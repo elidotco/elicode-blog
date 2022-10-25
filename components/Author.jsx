@@ -1,6 +1,4 @@
 import Image from "next/image";
-import React from "react";
-
 const Author = ({ author }) => {
   return (
     <div className=" mb-8 mt-20 bg-black relative text-center p-12 bg-opacity-20 rounded-lg ">
