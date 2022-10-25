@@ -14,7 +14,8 @@ const Card = ({ post }) => {
           alt={post.title}
           className="object-cover absolute w-full h-full rounded-t-lg lg:rounded-lg "
           layout="fill"
-          priority={true}
+          objectFit="middle"
+          objectPosition="center"
         />
       </div>
       <h1
