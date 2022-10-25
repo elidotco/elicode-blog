@@ -1,12 +1,12 @@
 import Head from "next/head";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 import { PostWidget, Card, Category } from "../components";
 import { getPosts } from "../services";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
-  useLayoutEffect(() => {
+  useEffect(() => {
     getPosts().then((result) => setPosts(result));
   });
   return (
