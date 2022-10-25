@@ -17,21 +17,21 @@ const Header = () => {
     <div className="container font-semibold  text-white mx-auto lg:px-10 px-4 mb-8">
       <div className="border-b w-full flex justify-between items-center border-blue-400 lg:py-8 py-5 capitalize">
         <div className="md:float-left ">
-          <Link href="/">
+          <a href="/">
             <span className="cursor-pointer font-bold lg:text-4xl text-2xl text-white">
               EliCode
             </span>
-          </Link>
+          </a>
         </div>
         <div>
           <div className="hidden md:float-left md:flex flex-row text-center items-center">
-            <Link href="/">
+            <a href="/">
               <span className="px-3 text-center cursor-pointer  ">Home</span>
-            </Link>
+            </a>
             {/*  eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <Link href="/about">
+            <a href="/about">
               <span className="px-3 text-center cursor-pointer ">About</span>
-            </Link>
+            </a>
 
             <Menu as="div" className={dr()}>
               <div>
@@ -56,9 +56,9 @@ const Header = () => {
                   <div className="px-1 py-4 flex flex-col gap-5  ">
                     {category.map((item) => (
                       <Menu.Item key={item.slug}>
-                        <Link key={item.slug} href={`/category/${item.slug}`}>
+                        <a key={item.slug} href={`/category/${item.slug}`}>
                           <span className="px-2 py-3">{item.name}</span>
-                        </Link>
+                        </a>
                       </Menu.Item>
                     ))}
                   </div>
@@ -66,14 +66,14 @@ const Header = () => {
               </Transition>
             </Menu>
 
-            <Link href="/contact">
+            <a href="/contact">
               <span className="px-3 text-center cursor-pointer  ">Contact</span>
-            </Link>
-            <Link href="/templates">
+            </a>
+            <a href="/templates">
               <span className="px-3 text-center cursor-pointer  ">
                 Templates
               </span>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -105,25 +105,25 @@ const Header = () => {
               <div className="flex-col flex border-b text-gray-700 border-blue-400 py-5 gap-3">
                 {category.map((item) => {
                   return (
-                    <Link key={item.slug} href={`/category/${item.slug}`}>
+                    <a key={item.slug} href={`/category/${item.slug}`}>
                       <span className="px-1 capitalize py-1">{item.name}</span>
-                    </Link>
+                    </a>
                   );
                 })}
               </div>
               <div className=" items-center  flex flex-col">
-                <Link className="py-3 px-3" href="/">
+                <a className="py-3 px-3" href="/">
                   <span className="py-1 cursor-pointer ">Home</span>
-                </Link>
-                <Link className="py-3 px-3" href="/about">
+                </a>
+                <a className="py-3 px-3" href="/about">
                   <span className="py-1 cursor-pointer ">About</span>
-                </Link>
-                <Link className="py-3 px-3" href="/security">
+                </a>
+                <a className="py-3 px-3" href="/security">
                   <span className="py-1 cursor-pointer ">Contact</span>
-                </Link>
-                <Link className="py-3 px-3" href="/integrations">
+                </a>
+                <a className="py-3 px-3" href="/integrations">
                   <span className="py-1 cursor-pointer ">Templates</span>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

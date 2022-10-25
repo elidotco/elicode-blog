@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Link from "next/link";
 const Templates = () => {
   return (
@@ -13,7 +14,7 @@ const Templates = () => {
           className="decoration-dashed px-4 py-2 bg-pink-500 cursor-pointer rounded-md transition 
       duration-700 hover:bg-blue-700 mx-5"
         >
-          <Link href="/contact">contact me</Link>
+          <a href="/contact">contact me</a>
         </span>
       </span>
     </div>
