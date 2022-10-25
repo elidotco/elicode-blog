@@ -24,7 +24,7 @@ const Card = ({ post }) => {
       font-semibold 
        hover:text-pink-700"
       >
-        <a href={`/post/${post.slug}`}>{post.title}</a>
+        <Link href={`/post/${post.slug}`}>{post.title}</Link>
       </h1>
 
       {/* Author info */}
@@ -70,7 +70,7 @@ const Card = ({ post }) => {
         {post.excerpt}
       </p>
       <div className="text-center">
-        <a href={`/post/${post.slug}`}>
+        <Link href={`/post/${post.slug}`}>
           <span
             className="transition duration-500 transform hover:-translate-y-1 bg-pink-600 inline-block font-medium
           rounded-full text-white px-8 py-3 mb-5
@@ -78,7 +78,7 @@ const Card = ({ post }) => {
           >
             continue Reading
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -31,53 +31,53 @@ const Footer = () => {
             Lets get connected on social media
           </p>
           <div className="flex gap-10">
-            <a href="#">
+            <Link href="#">
               <span className="">
                 <FaFacebookF size={20} color="white" />
               </span>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <span className=" ">
                 <BsInstagram size={20} color="white" />
               </span>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <span className=" ">
                 <SlSocialTwitter size={20} color="white" />
               </span>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <span className=" ">
                 <SlSocialLinkedin size={20} color="white" />
               </span>
-            </a>
+            </Link>
           </div>
         </div>
 
         <div>
           <div className="flex justify-center lg:justify-between items-center flex-col text-white lg:flex-row py-5 lg:px-14 px-4">
-            <a href="/">
+            <Link href="/">
               <span className=" text-white text-3xl font-semibold">
                 EliCode
               </span>
-            </a>
+            </Link>
 
             <div className="">
-              <a href="/about">
+              <Link href="/about">
                 <span className="px-3 text-center cursor-pointer pt-3 ">
                   About
                 </span>
-              </a>
-              <a href="/contact">
+              </Link>
+              <Link href="/contact">
                 <span className="px-3 text-center cursor-pointer pt-3 ">
                   Contact
                 </span>
-              </a>
-              <a href="/templates">
+              </Link>
+              <Link href="/templates">
                 <span className="px-3 text-center cursor-pointer pt-3 ">
                   Templates
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

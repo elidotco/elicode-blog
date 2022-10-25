@@ -13,11 +13,11 @@ const Category = () => {
     <div className="bg-white shadow-lg rounded-lg p-8 mb-8 ">
       <h1 className="text-xl mb-8 font-semibold pb-4 border-b">Categories</h1>
       {categories.map((category) => (
-        <a href={`/category/${category.slug}`} key={category.slug}>
+        <Link href={`/category/${category.slug}`} key={category.slug}>
           <span className="cursor-pointer pb-3 block mb-3 border-b">
             {category.name}
           </span>
-        </a>
+        </Link>
       ))}
     </div>
   );

@@ -14,7 +14,7 @@ const Templates = () => {
           className="decoration-dashed px-4 py-2 bg-pink-500 cursor-pointer rounded-md transition 
       duration-700 hover:bg-blue-700 mx-5"
         >
-          <a href="/contact">contact me</a>
+          <Link href="/contact">contact me</Link>
         </span>
       </span>
     </div>
