@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import { FeaturedPostCard } from "../components";
+import Skeleton from "../components/skeleton";
 import { getFeaturedPosts } from "../services";
 
 const responsive = {
@@ -91,9 +92,7 @@ const FeaturedPosts = () => {
           </Carousel>
         </div>
       ) : (
-        <div className="w-96  h-48 bg-white bg-opacity-50">
-          <div></div>
-        </div>
+        <Skeleton />
       )}
     </div>
   );

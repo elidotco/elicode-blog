@@ -191,7 +191,7 @@ export const getAdjacentPosts = async (createdAt, slug) => {
 export const getFeaturedPosts = async () => {
   const query = gql`
     query GetCategoryPost() {
-      posts(where: {featuredPost: true}) {
+      posts(where: {featuredPost: true} last: 3) {
         author {
           name
           image {
@@ -204,6 +204,8 @@ export const getFeaturedPosts = async () => {
         title
         slug
         createdAt
+
+        
       }
     }   
   `;
