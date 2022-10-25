@@ -1,16 +1,13 @@
 import Head from "next/head";
 
 import { PostWidget, Card, Category } from "../components";
+import FeaturedPosts from "../sections/FeaturedPosts";
 import { getPosts } from "../services";
 
 export default function Home({ posts }) {
-  // const [posts, setPosts] = useState([]);
-  // useEffect(() => {
-  //   getPosts().then((result) => setPosts(result));
-  // });
   return (
     <div className="container px-4  lg:px-10 mb-8">
-      {/* <FeaturedPosts /> */}
+      <FeaturedPosts />
       <Head>
         <title>EliCode</title>
         <meta name="description" content="Made by elicode" />

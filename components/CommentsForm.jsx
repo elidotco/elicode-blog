@@ -41,6 +41,9 @@ const CommentsForm = ({ slug }) => {
     }
 
     submitComment(commentObj).then((res) => {
+      commentEl.current.value = "";
+      email = "";
+      comment = "";
       setShowSuccesMessage(true);
       setTimeout(() => {
         setShowSuccesMessage(false);

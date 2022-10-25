@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -74,19 +74,27 @@ const FeaturedPosts = () => {
   );
 
   return (
-    <div className="mb-8">
-      <Carousel
-        infinite
-        customLeftArrow={customLeftArrow}
-        customRightArrow={customRightArrow}
-        responsive={responsive}
-        itemClass="px-4"
-      >
-        {dataLoaded &&
-          featuredPosts.map((post, index) => (
-            <FeaturedPostCard key={index} post={post} />
-          ))}
-      </Carousel>
+    <div>
+      {dataLoaded ? (
+        <div className="mb-8">
+          <Carousel
+            infinite
+            customLeftArrow={customLeftArrow}
+            customRightArrow={customRightArrow}
+            responsive={responsive}
+            itemClass="px-4"
+          >
+            {dataLoaded &&
+              featuredPosts.map((post, index) => (
+                <FeaturedPostCard key={index} post={post} />
+              ))}
+          </Carousel>
+        </div>
+      ) : (
+        <div className="w-96  h-48 bg-white bg-opacity-50">
+          <div></div>
+        </div>
+      )}
     </div>
   );
 };
