@@ -12,9 +12,8 @@ export default function Home({ posts }) {
         <meta name="description" content="Made by elicode" />
         <meta name="robots" content="all" />
         <link rel="icon" href="/favicon.ico" />
-        <html lang={"en"} />
       </Head>
-      {/* <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post) => (
             <Card post={post.node} key={post.node.title} />
@@ -27,7 +26,7 @@ export default function Home({ posts }) {
             <Category />
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
