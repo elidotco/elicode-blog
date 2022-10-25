@@ -1,14 +1,13 @@
 import Head from "next/head";
-import { useEffect, useLayoutEffect, useState } from "react";
 
 import { PostWidget, Card, Category } from "../components";
 import { getPosts } from "../services";
 
-export default function Home() {
-  const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    getPosts().then((result) => setPosts(result));
-  });
+export default function Home({ posts }) {
+  // const [posts, setPosts] = useState([]);
+  // useEffect(() => {
+  //   getPosts().then((result) => setPosts(result));
+  // });
   return (
     <div className="container px-4  lg:px-10 mb-8">
       {/* <FeaturedPosts /> */}
@@ -37,12 +36,12 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   const posts = (await getPosts()) || [];
+export async function getStaticProps() {
+  const posts = (await getPosts()) || [];
 
-//   return {
-//     props: {
-//       posts,
-//     },
-//   };
-// }
+  return {
+    props: {
+      posts,
+    },
+  };
+}
