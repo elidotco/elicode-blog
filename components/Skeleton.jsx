@@ -4,9 +4,9 @@ const Skeleton = () => {
       role="status"
       class="p-4 max-w-sm rounded border border-gray-200 shadow animate-pulse md:p-6 dark:border-gray-700"
     >
-      <div class="flex justify-center items-center mb-4 h-48 bg-gray-300 rounded dark:bg-gray-700">
+      <div className="flex justify-center items-center mb-4 h-48 bg-gray-300 rounded dark:bg-gray-700">
         <svg
-          class="w-12 h-12 text-gray-200 dark:text-gray-600"
+          className="w-12 h-12 text-gray-200 dark:text-gray-600"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           fill="currentColor"
