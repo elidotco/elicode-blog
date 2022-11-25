@@ -121,7 +121,7 @@ const Header = () => {
                 <Link className="py-3 px-3" href="/contact">
                   <span className="py-1 cursor-pointer ">Contact</span>
                 </Link>
-                <Link className="py-3 px-3" href="/template">
+                <Link className="py-3 px-3" href="/templates">
                   <span className="py-1 cursor-pointer ">Templates</span>
                 </Link>
               </div>
