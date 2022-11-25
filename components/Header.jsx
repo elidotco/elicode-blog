@@ -118,10 +118,10 @@ const Header = () => {
                 <Link className="py-3 px-3" href="/about">
                   <span className="py-1 cursor-pointer ">About</span>
                 </Link>
-                <Link className="py-3 px-3" href="/security">
+                <Link className="py-3 px-3" href="/contact">
                   <span className="py-1 cursor-pointer ">Contact</span>
                 </Link>
-                <Link className="py-3 px-3" href="/integrations">
+                <Link className="py-3 px-3" href="/template">
                   <span className="py-1 cursor-pointer ">Templates</span>
                 </Link>
               </div>
