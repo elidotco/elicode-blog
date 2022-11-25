@@ -9,6 +9,7 @@ const About = () => {
     <>
       <Head>
         <title>EliDotCo - About</title>
+        <meta name="robots" content="all" />
       </Head>
 
       <div className="container mx-auto lg:px-10 px-4">
