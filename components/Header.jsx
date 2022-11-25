@@ -1,10 +1,10 @@
 import React, { useEffect, useState, Fragment } from "react";
-import Link from "next/link";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Menu, Transition } from "@headlessui/react";
 import { getCategories } from "../services";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ const Header = () => {
             <Link href="/">
               <span className="px-3 text-center cursor-pointer  ">Home</span>
             </Link>
-            {/*  eslint-disable-next-line @next/next/no-html-link-for-pages */}
+
             <Link href="/about">
               <span className="px-3 text-center cursor-pointer ">About</span>
             </Link>

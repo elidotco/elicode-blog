@@ -41,7 +41,7 @@ export const getPosts = async () => {
 export const getrecentPosts = async () => {
   const query = gql`
     query GetPostDetails {
-      posts(orderBy: createdAt_ASC, last: 3) {
+      posts(orderBy: createdAt_ASC, last: 4) {
         title
         featuredImage {
           url
@@ -191,7 +191,7 @@ export const getAdjacentPosts = async (createdAt, slug) => {
 export const getFeaturedPosts = async () => {
   const query = gql`
     query GetCategoryPost() {
-      posts(where: {featuredPost: true} last: 3) {
+      posts(where: {featuredPost: true} ) {
         author {
           name
           image {
