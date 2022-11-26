@@ -75,7 +75,7 @@ const FeaturedPosts = () => {
   );
 
   return (
-    <div>
+    <div className="mx-auto">
       {dataLoaded ? (
         <div className="mb-8">
           <Carousel
