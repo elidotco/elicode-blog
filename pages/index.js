@@ -10,10 +10,12 @@ export default function Home({ posts }) {
       <FeaturedPosts />
       <Head>
         <title>EliCode</title>
-        <meta name="description" content="Made by elicode" />
+        <meta
+          name="description"
+          content="Want to learn howw to code but dont know where to start, or do you wnat to keep up with the current tips and tricks of front-end development then you are at the right place"
+        />
         <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="all" />
-
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
