@@ -33,7 +33,7 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getServerSideProps({ req, res }) {
+export async function getStaticProps({ req, res }) {
   res.setHeader(
     "Cache-Control",
     "public, s-maxage=10, stale-while-revalidate=59"
