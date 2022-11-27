@@ -11,7 +11,7 @@ const Card = ({ post }) => {
         <Image
           src={post.featuredImage.url}
           alt={post.title}
-          className="object-cover absolute w-full h-full rounded-t-lg lg:rounded-lg "
+          className="object-cover relative w-full h-full rounded-t-lg lg:rounded-lg "
           layout="fill"
           objectFit="middle"
           objectPosition="center"
