@@ -12,6 +12,8 @@ export default function Home({ posts }) {
         <title>EliCode</title>
         <meta name="description" content="Made by elicode" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="all" />
+
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
