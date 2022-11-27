@@ -42,6 +42,7 @@ const Card = ({ post }) => {
             width={30}
             className="align-center rounded-full"
             src={post.author.image.url}
+            priority={true}
           />
           <p
             className="inline align-middle text-gray-700 ml-2 text-lg
