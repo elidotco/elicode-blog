@@ -11,7 +11,6 @@ export default function Home({ posts }) {
       <Head>
         <title>EliCode</title>
         <meta name="description" content="Made by elicode" />
-        <meta name="robots" content="all" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
