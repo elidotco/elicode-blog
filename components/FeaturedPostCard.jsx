@@ -8,12 +8,15 @@ const FeaturedPostCard = ({ post }) => (
       className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72"
       style={{ backgroundImage: `url('${post.featuredImage.url}')` }}
     /> */}
-    <div>
+    <div className="">
       <Image
         src={post.featuredImage.url}
         alt={post.title}
         className="w-full relative align-middle rounded-lg object-cover"
         layout="fill"
+        sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
       />
     </div>
     <div className="absolute rounded-lg bg-center bg-gradient-to-b opacity-50 from-gray-400 via-gray-700 to-black w-full h-72" />
