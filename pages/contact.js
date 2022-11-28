@@ -1,5 +1,6 @@
 import { async } from "@firebase/util";
 import { addDoc, collection } from "firebase/firestore";
+import Head from "next/head";
 import React, { useRef, useState } from "react";
 import { db } from "../firebase";
 
@@ -43,6 +44,9 @@ const Contact = () => {
   };
   return (
     <div className="container mx-auto px-4 lg:px-10 mb-6">
+      <Head>
+        <meta name="robots" content="all" />
+      </Head>
       <div className="bg-white shadow-lg text-center rounded-lg p-8 pb-12">
         <h1 className="text-xl mb-8 font-semibold border-b pb-4">
           How Can I Help You
