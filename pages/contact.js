@@ -45,6 +45,7 @@ const Contact = () => {
   return (
     <div className="container mx-auto px-4 lg:px-10 mb-6">
       <Head>
+        <title>EliDotCo - Contact</title>
         <meta name="robots" content="all" />
       </Head>
       <div className="bg-white shadow-lg text-center rounded-lg p-8 pb-12">
