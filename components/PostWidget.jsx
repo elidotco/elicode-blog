@@ -21,7 +21,7 @@ const PostWidget = ({ slug, categories }) => {
   }, [slug]);
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8 mb-8 ">
+    <div className="bg-white shadow-lg rounded-lg p-8 mb-8 pb-12 ">
       <h1 className="text-xl mb-8 font-semibold pb-4 border-b">
         {slug ? "Related Post" : "Recent posts"}
       </h1>
@@ -32,16 +32,21 @@ const PostWidget = ({ slug, categories }) => {
               <Image
                 alt={post.title}
                 src={post.featuredImage.url}
-                className="align-middle h-16 w-16 object-cover rounded-full"
-                height={64}
-                width={64}
+                className="align-middle object-cover rounded-full"
+                height="60px"
+                width="60px"
+                unoptimized
               />
             </div>
             <div className="flex-grow ml-4">
               <p className="font-xs text-gray-500">
                 {moment(post.createdAt).format("MMM, DD ,YY")}
               </p>
-              <Link href={`/post/${post.slug}`} key={post.title}>
+              <Link
+                href={`/post/${post.slug}`}
+                className="text-md"
+                key={post.title}
+              >
                 {post.title}
               </Link>
             </div>

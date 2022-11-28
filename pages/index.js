@@ -10,6 +10,7 @@ export default function Home({ posts }) {
       <FeaturedPosts />
       <Head>
         <title>EliCode</title>
+        <meta name="theme-color" content="black" />
         <meta
           name="description"
           content="Want to learn howw to code but dont know where to start, or do you wnat to keep up with the current tips and tricks of front-end development then you are at the right place"

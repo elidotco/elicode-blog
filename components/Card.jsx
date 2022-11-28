@@ -7,17 +7,14 @@ const Card = ({ post }) => {
     <div className="bg-white shadow-lg rounded-lg lg:p-8 mb-8 p-0">
       {/* Post image */}
 
-      <div className="relative overflow-hidden shadow-md pb-80 mb-6 ">
+      <div className="relative overflow-hidden inline-block shadow-md pb-80 mb-6 rounded-lg w-full h-96">
         <Image
           src={post.featuredImage.url}
           alt={post.title}
-          className="object-cover relative w-full h-full rounded-t-lg lg:rounded-lg "
+          className="object-cover object-top absolute w-full h-80 rounded-t-lg lg:rounded-lg shadow-lg "
           layout="fill"
           objectFit="middle"
           objectPosition="center"
-          sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
         />
       </div>
       <h1
