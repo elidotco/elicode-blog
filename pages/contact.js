@@ -9,7 +9,6 @@ const Contact = () => {
   const commentEl = useRef();
   const nameEl = useRef();
   const emailEl = useRef();
-  const storeDataEl = useRef();
 
   const handleMess = async () => {
     console.log("sent");
@@ -39,11 +38,7 @@ const Contact = () => {
         setTimeout(() => {
           setShowSuccesMessage(false); //
         }, 1500);
-
-        console.log(docRef);
-      } catch (e) {
-        console.error("Error adding document: ", e);
-      }
+      } catch (e) {}
     }
   };
   return (
