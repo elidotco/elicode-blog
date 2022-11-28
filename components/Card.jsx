@@ -17,7 +17,7 @@ const Card = ({ post }) => {
           objectPosition="center"
         />
       </div>
-      <h1
+      <h2
         className="transition 
       duration-700 text-center mb-8 
       cursor-pointer text-3xl 
@@ -25,7 +25,7 @@ const Card = ({ post }) => {
        hover:text-pink-700"
       >
         <Link href={`/post/${post.slug}`}>{post.title}</Link>
-      </h1>
+      </h2>
 
       {/* Author info */}
       <div
