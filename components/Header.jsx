@@ -17,20 +17,20 @@ const Header = () => {
     <div className="container font-semibold  text-white mx-auto lg:px-10 px-4 mb-8">
       <div className="border-b w-full flex justify-between items-center border-blue-400 lg:py-8 py-5 capitalize">
         <div className="md:float-left ">
-          <Link href="/">
-            <span className="cursor-pointer font-bold lg:text-4xl text-2xl text-white">
+          <Link prefetch={false} href="/">
+            <a className="cursor-pointer font-bold lg:text-4xl text-2xl text-white">
               EliCode
-            </span>
+            </a>
           </Link>
         </div>
         <div>
           <div className="hidden md:float-left md:flex flex-row text-center items-center">
-            <Link href="/">
-              <span className="px-3 text-center cursor-pointer  ">Home</span>
+            <Link prefetch={false} href="/">
+              <a className="px-3 text-center cursor-pointer  ">Home</a>
             </Link>
 
-            <Link href="/about">
-              <span className="px-3 text-center cursor-pointer ">About</span>
+            <Link prefetch={false} href="/about">
+              <a className="px-3 text-center cursor-pointer ">About</a>
             </Link>
 
             <Menu as="div" className={dr()}>
@@ -56,8 +56,12 @@ const Header = () => {
                   <div className="px-1 py-4 flex flex-col gap-5  ">
                     {category.map((item) => (
                       <Menu.Item key={item.slug}>
-                        <Link key={item.slug} href={`/category/${item.slug}`}>
-                          <span className="px-2 py-3">{item.name}</span>
+                        <Link
+                          prefetch={false}
+                          key={item.slug}
+                          href={`/category/${item.slug}`}
+                        >
+                          <a className="px-2 py-3">{item.name}</a>
                         </Link>
                       </Menu.Item>
                     ))}
@@ -66,13 +70,11 @@ const Header = () => {
               </Transition>
             </Menu>
 
-            <Link href="/contact">
-              <span className="px-3 text-center cursor-pointer  ">Contact</span>
+            <Link prefetch={false} href="/contact">
+              <a className="px-3 text-center cursor-pointer  ">Contact</a>
             </Link>
-            <Link href="/templates">
-              <span className="px-3 text-center cursor-pointer  ">
-                Templates
-              </span>
+            <Link prefetch={false} href="/templates">
+              <a className="px-3 text-center cursor-pointer  ">Templates</a>
             </Link>
           </div>
         </div>
@@ -105,24 +107,28 @@ const Header = () => {
               <div className="flex-col flex border-b text-gray-700 border-blue-400 py-5 gap-3">
                 {category.map((item) => {
                   return (
-                    <Link key={item.slug} href={`/category/${item.slug}`}>
-                      <span className="px-1 capitalize py-1">{item.name}</span>
+                    <Link
+                      prefetch={false}
+                      key={item.slug}
+                      href={`/category/${item.slug}`}
+                    >
+                      <a className="px-1 capitalize py-1">{item.name}</a>
                     </Link>
                   );
                 })}
               </div>
               <div className=" items-center  flex flex-col">
-                <Link className="py-3 px-3" href="/">
-                  <span className="py-1 cursor-pointer ">Home</span>
+                <Link prefetch={false} className="py-3 px-3" href="/">
+                  <a className="py-1 cursor-pointer ">Home</a>
                 </Link>
-                <Link className="py-3 px-3" href="/about">
-                  <span className="py-1 cursor-pointer ">About</span>
+                <Link prefetch={false} className="py-3 px-3" href="/about">
+                  <a className="py-1 cursor-pointer ">About</a>
                 </Link>
-                <Link className="py-3 px-3" href="/contact">
-                  <span className="py-1 cursor-pointer ">Contact</span>
+                <Link prefetch={false} className="py-3 px-3" href="/contact">
+                  <a className="py-1 cursor-pointer ">Contact</a>
                 </Link>
-                <Link className="py-3 px-3" href="/templates">
-                  <span className="py-1 cursor-pointer ">Templates</span>
+                <Link prefetch={false} className="py-3 px-3" href="/templates">
+                  <a className="py-1 cursor-pointer ">Templates</a>
                 </Link>
               </div>
             </div>
