@@ -9,11 +9,11 @@ export default function Home({ posts }) {
     <div className="container px-4   mx-auto  w-full items-center mb-8">
       <FeaturedPosts />
       <Head>
-        <title>EliCode, learn Code</title>
+        <title>EliCode learn Code Front-end and stay upto date</title>
         <meta name="theme-color" content="black" />
         <meta
           name="description"
-          content="Want to learn how to code but dont know where to start, or do you want to keep up with the current tips and tricks of front-end development then you are at the right place"
+          content="Want to learn how to code but don't know where to start, or  you want to keep up with the current tips and tricks of front-end development then you have arrived"
         />
         <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="all" />
