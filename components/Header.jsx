@@ -14,11 +14,11 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="container font-semibold  text-white mx-auto lg:px-10 px-4 mb-8">
-      <div className="border-b w-full flex justify-between items-center border-blue-400 lg:py-8 py-5 capitalize">
+    <div className=" font-semibold  text-white    mb-8">
+      <div className="border-b w-full flex justify-between items-center nav border-blue-400 lg:py-8 py-5 px-10 capitalize">
         <div className="md:float-left ">
           <Link prefetch={false} href="/">
-            <a className="cursor-pointer font-bold lg:text-4xl text-2xl text-white">
+            <a className="cursor-pointer font-bold lg:text-4xl text-2xl">
               EliCode
             </a>
           </Link>
@@ -87,9 +87,9 @@ const Header = () => {
             className={`animate-spin`}
           >
             {isOpen ? (
-              <XMarkIcon className="h-7 w-7 text-white" />
+              <XMarkIcon className="h-7 w-7" />
             ) : (
-              <Bars3Icon className="h-7 w-7 text-white" />
+              <Bars3Icon className="h-7 w-7 " />
             )}
             <span className="sr-only">
               {isOpen ? "Close Menu" : "Open Menu"}
