@@ -15,7 +15,6 @@ class MyDocument extends Document {
             content="width=device-width,minimum-scale=1, initial-scale=1"
           />
           <meta name="robots" content="all" /> */}
-          <meta name="robots" content="all" />
         </Head>
         <body>
           <Main />
