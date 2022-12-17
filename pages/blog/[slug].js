@@ -14,7 +14,7 @@ const PostDetails = ({ post }) => {
   return (
     <>
       <Head>
-        <title>{`Elitoco/posts/${post.slug}`}</title>
+        <title>{`Elitoco/blog/${post.slug}`}</title>
         <meta name="description" content={post.excerpt} />
         <meta name="robots" content="all" />
       </Head>

@@ -24,42 +24,40 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="absolute -bottom-56 bg-blue-500    text-white w-full ">
+    <div className="absolute -bottom-56  footer    w-full ">
       <div className="">
-        <div className="w-full py-2 lg:px-14 bg-blue-500 shadow-lg flex justify-center flex-col lg:justify-between lg:flex-row items-center gap-5">
+        <div className="w-full py-2 lg:px-14 shadow-lg flex justify-center flex-col lg:justify-between lg:flex-row items-center gap-5">
           <p className="text-lg font-semibold">
             Lets get connected on social media
           </p>
           <div className="flex gap-10">
             <Link href="#">
               <span className="">
-                <FaFacebookF size={20} color="white" />
+                <FaFacebookF size={20} />
               </span>
             </Link>
             <Link href="#">
               <span className=" ">
-                <BsInstagram size={20} color="white" />
+                <BsInstagram size={20} />
               </span>
             </Link>
             <Link href="#">
               <span className=" ">
-                <SlSocialTwitter size={20} color="white" />
+                <SlSocialTwitter size={20} />
               </span>
             </Link>
             <Link href="#">
               <span className=" ">
-                <SlSocialLinkedin size={20} color="white" />
+                <SlSocialLinkedin size={20} />
               </span>
             </Link>
           </div>
         </div>
 
         <div>
-          <div className="flex justify-center lg:justify-between items-center flex-col text-white lg:flex-row py-5 lg:px-14 px-4">
+          <div className="flex justify-center lg:justify-between items-center flex-col lg:flex-row py-5 lg:px-14 px-4">
             <Link href="/">
-              <span className=" text-white text-3xl font-semibold">
-                EliCode
-              </span>
+              <span className=" text-3xl font-semibold">EliCode</span>
             </Link>
 
             <div className="">
@@ -79,6 +77,7 @@ const Footer = () => {
                 </span>
               </Link>
             </div>
+            <div>All rights Reserved &copy; 2023</div>
           </div>
         </div>
       </div>

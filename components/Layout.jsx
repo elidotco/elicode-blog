@@ -1,4 +1,4 @@
-import { Header } from "./";
+import { Header, Socials } from "./";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
@@ -6,7 +6,8 @@ const Layout = ({ children }) => {
     <>
       <Header />
       {children}
-      {/* <Footer /> */}
+      <Socials />
+      <Footer />
     </>
   );
 };

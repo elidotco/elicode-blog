@@ -251,3 +251,30 @@ export const getCategoryPost = async (slug) => {
 
   return result.postsConnection.edges;
 };
+
+export const getNewsPosts = async () => {
+  const query = gql`
+    query GetNewsPost() {
+      posts(where:{categories_some:{name:"News"}}) {
+        author {
+          name
+          image {
+            url
+          }
+        }
+        featuredImage {
+          url
+        }
+        title
+        slug
+        createdAt
+
+        
+      }
+    }   
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.posts;
+};

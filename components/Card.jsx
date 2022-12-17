@@ -24,7 +24,7 @@ const Card = ({ post }) => {
       font-semibold 
        hover:text-pink-700"
       >
-        <Link href={`/post/${post.slug}`}>{post.title}</Link>
+        <Link href={`/blog/${post.slug}`}>{post.title}</Link>
       </h2>
 
       {/* Author info */}
@@ -71,7 +71,7 @@ const Card = ({ post }) => {
         {post.excerpt}
       </p>
       <div className="text-center">
-        <Link href={`/post/${post.slug}`}>
+        <Link href={`/blog/${post.slug}`}>
           <span
             className="transition duration-500 transform hover:-translate-y-1 bg-pink-600 inline-block font-medium
           rounded-full text-white px-8 py-3 mb-5
