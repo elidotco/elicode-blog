@@ -7,12 +7,12 @@ const Templates = () => {
       className="text-center font-semibold text-5xl container mx-auto flex justify-center flex-col
     items-center flex-1 py-10"
     >
-      {/* <Head>
+      <Head>
         <title>
           EliCode learn Code Front-end and stay upto date // get templates for
           your future projects
         </title>
-      </Head> */}
+      </Head>
       Hello there , We are working on Bringing you the best of design and
       simplicity
       <span className="text-lg italic my-10 text-white">
