@@ -150,17 +150,15 @@ const Header = () => {
       name: "blog",
       path: "/blog",
     },
-    {
-      name: "news",
-      path: "/news",
-    },
-    {
-      name: "Tutorials",
-      path: "/tutorials",
-    },
+
     {
       name: "template",
       path: "/templates",
+    },
+
+    {
+      name: "about",
+      path: "/about",
     },
     {
       name: "contact Us",
