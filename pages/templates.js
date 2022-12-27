@@ -15,7 +15,7 @@ const Templates = () => {
       </Head>
       Hello there , We are working on Bringing you the best of design and
       simplicity
-      <span className="text-lg italic my-10 text-white">
+      <h1 className="text-lg italic my-10 text-white">
         wanna contribute,{" "}
         <span
           className="decoration-dashed px-4 py-2 bg-pink-500 cursor-pointer rounded-md transition 
@@ -23,7 +23,7 @@ const Templates = () => {
         >
           <Link href="/contact">contact me</Link>
         </span>
-      </span>
+      </h1>
     </div>
   );
 };
