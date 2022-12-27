@@ -9,7 +9,10 @@ export default function Home({ posts }) {
     <div className="container px-4   mx-auto  w-full items-center mb-8">
       {/* <FeaturedPosts /> */}
       <Head>
-        <title>EliCode learn Code Front-end and stay upto date</title>
+        <title>
+          EliCode Blog section learn about latest tips and tricks to make you a
+          better developer d
+        </title>
         <meta name="theme-color" content="black" />
         <meta
           name="description"
